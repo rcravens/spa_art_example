@@ -1,0 +1,170 @@
+body {
+	background-color: #110C2A;
+}
+
+/* Land layer */
+.land {
+	background-color: #F6EAD0;
+    background-image: url(img/land-bottom.png), url(img/land-top.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, 50% -100px;
+    background-size: 100%, 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1260px;
+    margin-bottom: -1px;
+    position: relative;
+}
+
+/* Shallow water */
+.shallow {
+	background: #054B5D;
+    background-image: url(img/shallow-left.png), url(img/shallow-right.png), url(img/shallow-top.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center left, center right, center top;
+    background-size: 240px auto, 285px auto, 100% auto;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    min-height: 1400px;
+    padding-top: 100px;
+    position: relative;
+}
+
+/* Deep water */
+.deep {
+	background-color: #001f34;
+    background-image: url(img/deep-top.jpg), url(img/deep-bottom.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100%, 100%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 1200px;
+    padding-top: 300px;
+    padding-bottom: 33vw;
+    position: relative;
+}
+
+/* Waves layer */
+.waves {
+	position: relative;
+    background-color: #051228;
+    background-image: url(img/waves.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height:1000px;
+}
+
+/* Dark water layer */
+.dark {
+	position: relative;
+    background-color: #020221;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+/* Sub layer */
+.sub {
+	background-color: #020221;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+    position: relative;
+    min-height: 1000px;
+}
+.sub .submarine {
+	height: 503px;
+    width: 70vw;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: 0;
+    overflow-x: hidden;
+}
+.sub .element {
+	position: absolute;
+	z-index: 0;
+}
+.sub .element-2{
+	top: 0;
+	width: 100%;
+}
+.sub .element-3{
+	bottom: 0;
+	width: 100%;
+}
+.sub .sub-fill{
+	min-height: 1000px;
+	width: 100%;
+	display: flex;
+	z-index: 1;
+}
+
+
+.shelf {
+	min-height: 1500px;
+	background-color: #020221;
+	background-image: url(img/shelf.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100%;
+}
+
+.bottom {
+	background: #110C2A;
+    background-image: url(img/bottom.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 700px;
+    position: relative;
+}
+
+.angular {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.angular:after {
+	content: '';
+    background: #57ffe9;
+    background: radial-gradient(circle, rgba(87, 255, 233, 0.8) 0%, rgba(122, 202, 196, 0) 30%);
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    mix-blend-mode: hard-light;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    transform: scale(1);
+    animation: pulse 2600ms ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(4.5); } 
+}
+
