@@ -8,7 +8,7 @@ var App;
 
 function initPixi() {
   var image = new PIXI.Sprite.from("img/waves.jpg");
-  displacementSprite = new PIXI.Sprite.from("/2020/assets/images/cloud.jpg");
+  displacementSprite = new PIXI.Sprite.from("img/cloud.jpg");
   var canvas = document.getElementById("waves");
 
   width = window.innerWidth;
