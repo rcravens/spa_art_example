@@ -91,7 +91,7 @@ body {
 }
 .sub .submarine {
 	height: 503px;
-    width: 70vw;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 40%;
