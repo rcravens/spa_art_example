@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 /* WAVES */
-/*
+
 var App;
 
 function initPixi() {
@@ -40,4 +40,3 @@ function animate() {
   requestAnimationFrame(animate);
 }
 initPixi();
-*/
